@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { VeltProvider } from '@veltdev/react'
 import './App.css'
 import TipTap from './components/TipTap'

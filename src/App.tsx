@@ -10,7 +10,7 @@ function App() {
       <VeltProvider apiKey={'Emcfab4ysRXaC1CZ8hmG'}>
         <div className="app-container">
           <header className="app-header">
-            <h1 className="app-title">Collaborative Tiptap Editor</h1>
+            <h1 className="app-title">Velt Collaborative Tiptap Editor</h1>
             <div className="login-section">
               <VeltCollaboration />
             </div>

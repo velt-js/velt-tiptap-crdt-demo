@@ -85,6 +85,7 @@ function VeltInitializeUser() {
         if (client) {
             client.signOutUser();
         }
+        window.location.reload();
     }
 
     return (

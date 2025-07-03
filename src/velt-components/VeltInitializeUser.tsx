@@ -3,54 +3,42 @@ import { User } from '@veltdev/types';
 import { useEffect, useState } from 'react';
 
 const users: Record<string, User> = {
-    'rakesh': {
-        userId: 'rakesh',
-        name: 'Rakesh',
-        photoUrl: '',
-        email: 'rakesh@trysnippyly.com',
-        plan: 'free',
+    'michael': {
+        userId: 'michael',
+        name: 'Michael Scott',
+        email: 'michael.scott@dundermifflin.com',
         organizationId: 'crdt-tiptap-org1',
     },
-    'tej': {
-        userId: 'tej',
-        name: 'Tej',
-        photoUrl: '',
-        email: 'tej@trysnippyly.com',
-        plan: 'paid',
+    'jim': {
+        userId: 'jim',
+        name: 'Jim Halpert',
+        email: 'jim.halpert@dundermifflin.com',
         organizationId: 'crdt-tiptap-org1',
     },
-    'vivek': {
-        userId: 'vivek',
-        name: 'Vivek',
-        photoUrl: '',
-        email: 'vivek@trysnippyly.com',
-        plan: 'trial',
+    'pam': {
+        userId: 'pam',
+        name: 'Pam Beesly',
+        email: 'pam.beesly@dundermifflin.com',
         organizationId: 'crdt-tiptap-org1',
     },
-    'mayank': {
-        userId: 'mayank',
-        name: 'Mayank',
-        photoUrl: '',
-        email: 'mayank@trysnippyly.com',
-        plan: 'trial',
-        organizationId: 'crdt-tiptap-org1',
-    },
-    'mihir': {
-        userId: 'mihir',
-        name: 'Mihir',
-        photoUrl: '',
-        email: 'mihir@trysnippyly.com',
-        plan: 'trial',
-        organizationId: 'crdt-tiptap-org1',
-    },
-    'samarth': {
-        userId: 'samarth',
-        name: 'Samarth',
-        photoUrl: '',
-        email: 'samarth@trysnippyly.com',
-        plan: 'trial',
-        organizationId: 'crdt-tiptap-org1',
-    },
+    // 'dwight': {
+    //     userId: 'dwight',
+    //     name: 'Dwight Schrute',
+    //     email: 'dwight.schrute@dundermifflin.com',
+    //     organizationId: 'crdt-tiptap-org1',
+    // },
+    // 'angela': {
+    //     userId: 'angela',
+    //     name: 'Angela Martin',
+    //     email: 'angela.martin@dundermifflin.com',
+    //     organizationId: 'crdt-tiptap-org1',
+    // },
+    // 'kevin': {
+    //     userId: 'kevin',
+    //     name: 'Kevin Malone',
+    //     email: 'kevin.malone@dundermifflin.com',
+    //     organizationId: 'crdt-tiptap-org1',
+    // },
 }
 
 function VeltInitializeUser() {
@@ -106,8 +94,8 @@ function VeltInitializeUser() {
                             <span>Login as:</span>
                             {
                                 Object.keys(users).map((userId) => (
-                                    <button 
-                                        key={userId} 
+                                    <button
+                                        key={userId}
                                         onClick={() => loginWithUser(userId)}
                                         className="login-btn"
                                     >

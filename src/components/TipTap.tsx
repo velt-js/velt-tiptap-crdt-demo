@@ -29,7 +29,7 @@ const CollaborativeEditor: React.FC = () => {
   }, [client, veltUser]);
 
   const initializeStore = async () => {
-    const veltTiptapStore = await createVeltTipTapStore({ editorId: 'velt-tiptap-crdt-demo', veltClient: client! });
+    const veltTiptapStore = await createVeltTipTapStore({ editorId: 'velt-tiptap-crdt-demo-1-28-aug-2025', veltClient: client! });
     veltTiptapStoreRef.current = veltTiptapStore;
     setVeltTiptapStoreReady(true);
   }

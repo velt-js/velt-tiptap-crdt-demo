@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5193",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -14,8 +14,8 @@
     "@tiptap/extension-collaboration-cursor": "^2.23.1",
     "@tiptap/react": "^2.23.1",
     "@tiptap/starter-kit": "^2.23.1",
-    "@veltdev/react": "^4.5.0-beta.38",
-    "@veltdev/tiptap-crdt": "^4.5.0-beta.1",
+    "@veltdev/react": "^4.5.2-beta.2",
+    "@veltdev/tiptap-crdt": "^4.5.0-beta.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -23,7 +23,7 @@
     "@eslint/js": "^9.29.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@veltdev/types": "^4.5.0-beta.38",
+    "@veltdev/types": "^4.5.2-beta.2",
     "@vitejs/plugin-react": "^4.5.2",
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",

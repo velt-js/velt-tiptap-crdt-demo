@@ -76,6 +76,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 /* TipTap Editor Styles */

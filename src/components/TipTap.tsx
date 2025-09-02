@@ -7,8 +7,8 @@ import React from 'react';
 const CollaborativeEditor: React.FC = () => {
 
   const veltUser = useVeltEventCallback('userUpdate');
-  const veltTiptapCrdtExtension = useVeltTiptapCrdtExtension({
-    editorId: 'velt-tiptap-crdt-demo-1-1-sept-2025'
+  const { VeltCrdt } = useVeltTiptapCrdtExtension({
+    editorId: 'velt-tiptap-crdt-demo-1-3-sept-2025'
   });
   // Initialize the editor with our collaboration extension
   const editor = useEditor({
@@ -16,10 +16,10 @@ const CollaborativeEditor: React.FC = () => {
       StarterKit.configure({
         history: false,
       }),
-      ...(veltTiptapCrdtExtension ? [veltTiptapCrdtExtension] : []),
+      ...(VeltCrdt ? [VeltCrdt] : []),
     ],
     content: ''
-  }, [veltTiptapCrdtExtension]);
+  }, [VeltCrdt]);
 
   return (
     <div className="editor-container">
@@ -30,7 +30,7 @@ const CollaborativeEditor: React.FC = () => {
         <EditorContent editor={editor} />
       </div>
       <div className="status">
-        {veltTiptapCrdtExtension ? 'Connected to collaborative session' : 'Connecting to collaborative session...'}
+        {VeltCrdt ? 'Connected to collaborative session' : 'Connecting to collaborative session...'}
       </div>
     </div>
   );

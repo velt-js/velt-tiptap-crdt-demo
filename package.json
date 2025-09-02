@@ -15,7 +15,7 @@
     "@tiptap/react": "^2.23.1",
     "@tiptap/starter-kit": "^2.23.1",
     "@veltdev/react": "^4.5.2-beta.2",
-    "@veltdev/tiptap-crdt-react": "^4.5.0-beta.2",
+    "@veltdev/tiptap-crdt-react": "^4.5.0-beta.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
